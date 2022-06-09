@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Listado de Personas</h1>
+  <button pButton type="button" label="Agregar Persona" [disabled]="deshabilitar" (click)="agregarPersona()"></button>
+  <p>
+    {{ mensaje }}
+  </p>
+  <p>
+    <app-persona></app-persona>
+  </p>
+  <label>Titulo Persona</label>
+  <!-- <input pInputText type="text" (input)="modificarTitulo($event)" /> -->
+  <input type="text" pInputText [(ngModel)]="titulo">
+  <br>
+  {{ titulo }}
+
+</div>
+
+
