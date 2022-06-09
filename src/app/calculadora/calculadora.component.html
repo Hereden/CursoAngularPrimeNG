@@ -1,12 +1,12 @@
 Aplicación de Calculadora
 <br>
-Operando A:
+<label>Operando A</label>
 <br>
-<p-inputNumber [(ngModel)]="operandoA" mode="decimal" [minFractionDigits]="2"></p-inputNumber>
+<p-inputNumber [(ngModel)]="operandoA" mode="decimal" [minFractionDigits]="2" placeholder="Escribe Operando A"></p-inputNumber>
 <br>
-Operando B:
+<label>Operando B:</label>
 <br>
-<p-inputNumber [(ngModel)]="operandoB" mode="decimal" [minFractionDigits]="2"></p-inputNumber>
+<p-inputNumber [(ngModel)]="operandoB" mode="decimal" [minFractionDigits]="2" placeholder="Escribe Operando B"></p-inputNumber>
 <br>
 <button pButton label="Sumar" (click)="sumar()"></button>
 <br>
